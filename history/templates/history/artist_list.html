@@ -1,0 +1,13 @@
+
+
+
+<h1>Artists</h1>
+
+
+
+<ul>
+{% for artist in artists %}
+
+    <li><a href="{% url 'history:detail' artist.id %}">{{ artist.name }}<small><i>({{artist.genre}})</i></small></a></li>
+{% endfor %}
+</ul>
